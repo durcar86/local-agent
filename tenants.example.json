@@ -4,6 +4,7 @@
             "id": "1",
             "name": "John Smith",
             "phone": "555-1234",
+            "address": "123 Main",
             "rentAmount": 1500,
             "rentDueDay": 1,
             "paymentMethod": "Zelle"
@@ -12,6 +13,7 @@
             "id": "2",
             "name": "Chris Smith",
             "phone": "555-1234",
+            "address": "123 Main",
             "rentAmount": 1500,
             "rentDueDay": 1,
             "paymentMethod": "Venmo"
