@@ -1,0 +1,99 @@
+{
+    "recurringBills": [
+      {
+        "id": "1",
+        "name": "Business Mortgage",
+        "category": "mortgage",
+        "amount": 2500,
+        "isVariable": false,
+        "frequency": "monthly",
+        "dueDay": 1,
+        "autopay": true,
+        "autopayAccount": "business_checking",
+        "paymentAccount": "business_checking",
+        "paymentMethod": "ACH",
+        "notes": "Main office building",
+        "active": true
+      },
+      {
+        "id": "2",
+        "name": "Business Credit Card - Chase",
+        "category": "credit_card",
+        "amount": null,
+        "isVariable": true,
+        "frequency": "monthly",
+        "dueDay": 15,
+        "autopay": false,
+        "paymentAccount": "business_checking",
+        "paymentMethod": "online",
+        "notes": "Varies each month - check statement",
+        "active": true
+      },
+      {
+        "id": "3",
+        "name": "Electric Bill",
+        "category": "utility",
+        "amount": null,
+        "isVariable": true,
+        "frequency": "monthly",
+        "dueDay": 10,
+        "autopay": true,
+        "autopayAccount": "business_checking",
+        "paymentAccount": "business_checking",
+        "paymentMethod": "ACH",
+        "notes": "Varies by season",
+        "active": true
+      },
+      {
+        "id": "4",
+        "name": "Business Loan - Equipment",
+        "category": "loan",
+        "amount": 850,
+        "isVariable": false,
+        "frequency": "monthly",
+        "dueDay": 5,
+        "autopay": false,
+        "paymentAccount": "business_checking",
+        "paymentMethod": "ACH",
+        "notes": "Manual payment required",
+        "active": true
+      }
+    ],
+    "oneTimeBills": [
+      {
+        "id": "100",
+        "name": "Quarterly Estimated Tax Q1",
+        "category": "tax",
+        "amount": 5000,
+        "dueDate": "2024-04-15",
+        "autopay": false,
+        "paymentAccount": "business_checking",
+        "paymentMethod": "EFTPS",
+        "notes": "IRS estimated tax payment",
+        "paid": false
+      }
+    ],
+    "accounts": [
+      {
+        "id": "acc1",
+        "name": "Business Checking",
+        "type": "checking",
+        "institution": "Chase",
+        "lastBalance": 15000,
+        "lastUpdated": "2024-02-01T10:00:00.000Z"
+      },
+      {
+        "id": "acc2",
+        "name": "Business Savings",
+        "type": "savings",
+        "institution": "Chase",
+        "lastBalance": 50000,
+        "lastUpdated": "2024-02-01T10:00:00.000Z"
+      }
+    ],
+    "paymentHistory": [],
+    "metadata": {
+      "created": "2024-02-01T10:00:00.000Z",
+      "lastUpdated": "2024-02-01T10:00:00.000Z"
+    }
+  }

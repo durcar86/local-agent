@@ -1,0 +1,33 @@
+{
+  "ollama": {
+    "baseUrl": "http://localhost:11434",
+    "model": "llama3.2:3b",
+    "notes": "Other good models for Pi 5: phi3:mini, llama3.2:7b (needs 8GB RAM)"
+  },
+  "telegram": {
+    "botToken": "1234567890:ABCdefGHIjklMNOpqrsTUVwxyz",
+    "chatId": "123456789",
+    "notes": "Get token from @BotFather, get chatId from /getUpdates endpoint"
+  },
+  "googleCalendar": {
+    "credentialsPath": "./credentials.json",
+    "tokenPath": "./token.json",
+    "notes": "Download credentials.json from Google Cloud Console"
+  },
+  "briefing": {
+    "time": "08:00",
+    "timezone": "America/New_York",
+    "notes": "24-hour format. Will send briefing every day at this time"
+  },
+  "location": {
+    "city": "New York",
+    "state": "New York",
+    "country": "US",
+    "notes": "Used for weather forecasts in morning briefing"
+  },
+  "finance": {
+    "stocks": ["QQQ", "SPY", "AAPL"],
+    "crypto": ["BTC", "ETH"],
+    "notes": "Stock symbols and crypto to include in morning briefing"
+  }
+}

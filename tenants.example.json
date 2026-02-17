@@ -1,0 +1,56 @@
+{
+    "tenants": [
+        {
+            "id": "1",
+            "name": "John Smith",
+            "phone": "555-1234",
+            "rentAmount": 1500,
+            "rentDueDay": 1,
+            "paymentMethod": "Zelle"
+          },
+          {
+            "id": "2",
+            "name": "Chris Smith",
+            "phone": "555-1234",
+            "rentAmount": 1500,
+            "rentDueDay": 1,
+            "paymentMethod": "Venmo"
+          }
+    ],
+    "messageTemplates": {
+      "rentReminder": "Just a friendly reminder that your rent of $[AMOUNT] is due on [DUE_DATE]. You can make the payment through [PAYMENT_METHOD]. Thank you for your cooperation in advance.",
+      "rentReminderFriendly": "We hope you're doing well! Your rent of $[AMOUNT] is due on [DUE_DATE]. We appreciate your timely payments, and if you have any questions, feel free to reach out. Thanks for being a great tenant!",
+      "paymentReceived": "Received your rent payment. Thank you for your promptness!",
+      "latePaymentPolicy": "Thank you for the message and heads up. I can accept a check if the banking app is not working. Our lease agreement states there is a 5 day grace period before a late charge of $50 + $10 per day is added. Let me know.",
+      "monthlyCheckIn": "Hi [NAME]! Hope everything is going well with the property. Just checking in to see if there are any maintenance issues or concerns. Your rent of $[AMOUNT] is due on [DUE_DATE]. Thanks for being a great tenant!"
+    },
+    "metadata": {
+      "created": "2024-01-15T10:00:00.000Z",
+      "lastUpdated": "2024-01-15T10:00:00.000Z"
+    }
+  }
+  ```
+  
+  Then add your tenants to the array!
+  
+  ### Usage Examples:
+  
+  **LLM Reply:**
+  ```
+  You: /tenantreply My water heater is broken
+  Bot: 💬 Suggested reply:
+  
+  I'm sorry to hear about the water heater issue. I'll arrange for a technician to come out and take a look as soon as possible. Can you let me know when you're available this week? Thank you for letting me know right away.
+  ```
+  
+  **Morning Briefing (on 25th):**
+  ```
+  🌅 Good morning! Today is January 25, 2024
+  
+  💰 Market Update: ...
+  🌤️ Weather: ...
+  📅 Your schedule: ...
+  
+  🏠 RENT REMINDER - Time to message your tenants!
+  You have 2 tenant(s) to remind.
+  Use /rentreminder to generate messages.
