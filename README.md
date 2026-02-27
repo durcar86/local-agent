@@ -92,7 +92,7 @@ npm run setup
 3. Enable the Google Calendar API
 4. Create OAuth 2.0 credentials (Desktop application)
 5. Download `credentials.json` to the project directory (/data/pi-assistant)
-6. Run script, bash /scripts/google-auth.sh and copy token from URL redirect link
+6. Run script, `bash /scripts/google-auth.sh` and copy token from URL redirect link
 
 ## Configuration ⚙️
 
