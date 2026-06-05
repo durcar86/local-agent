@@ -1,4 +1,4 @@
-# Pi Local Assistant 🤖
+# Local Agent 🤖
 
 A personal AI assistant running locally on Raspberry Pi 5 with Ollama, featuring Telegram integration, morning briefings, and Google Calendar management.
 
