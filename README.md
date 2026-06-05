@@ -63,8 +63,8 @@ ollama pull phi3:mini
 ```bash
 # Clone or download this project
 cd ~
-git clone <your-repo-url> pi-assistant
-cd pi-assistant
+git clone <your-repo-url> local-agent
+cd local-agent
 
 # Install dependencies
 npm install
@@ -140,21 +140,21 @@ npm start
 Create a systemd service:
 
 ```bash
-sudo nano /etc/systemd/system/pi-assistant.service
+sudo nano /etc/systemd/system/local-agent.service
 ```
 
 Add this content:
 
 ```ini
 [Unit]
-Description=Pi Local Assistant
+Description=Local Agent
 After=network.target ollama.service
 
 [Service]
 Type=simple
 User=pi
-WorkingDirectory=/home/pi/pi-assistant
-ExecStart=/usr/bin/node /home/pi/pi-assistant/src/index.js
+WorkingDirectory=/home/pi/local-agent
+ExecStart=/usr/bin/node /home/pi/local-agent/src/index.js
 Restart=on-failure
 RestartSec=10
 
@@ -173,7 +173,7 @@ sudo systemctl status pi-assistant
 View logs:
 
 ```bash
-sudo journalctl -u pi-assistant -f
+sudo journalctl -u local-agent -f
 ```
 
 ### Telegram Commands
@@ -197,7 +197,7 @@ Just talk naturally to your assistant:
 ## Architecture 🏗️
 
 ```
-pi-assistant/
+local-agent/
 ├── src/
 │   ├── index.js              # Main application entry
 │   ├── setup.js              # Interactive setup wizard
@@ -325,7 +325,7 @@ MIT License - feel free to use and modify!
 If you run into issues:
 
 1. Check the troubleshooting section
-2. Review the logs: `sudo journalctl -u pi-assistant -f`
+2. Review the logs: `sudo journalctl -u local-agent -f`
 3. Ensure all services are running
 4. Verify your configuration
 
